@@ -278,14 +278,11 @@ a:focus {
 
 .menu-toggle {
   outline: none;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; /* Remove destaque no toque */
+  box-shadow: none; /* Remove a borda azul em alguns navegadores */
 }
-.menu-toggle:focus {
+.menu-toggle:focus,
+.menu-toggle:active {
   outline: none;
-}.menu-toggle {
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-}
-.menu-toggle:focus {
-  outline: none;
+  box-shadow: none;
 }
