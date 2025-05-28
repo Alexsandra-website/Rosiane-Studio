@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roseiane Estúdio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-sobre.css">
+  
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo-text">Roseiane</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre mim.html">Sobre Mim</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu(this)">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="index.html">Início</a>
+      <a href="sobre mim.html">Sobre Mim</a>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu(x) {
+      x.classList.toggle("nav-open");
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("show");
+    }
+  </script>
+
+  <main>
+    <section id="inicio">
+      <header>
+        <img src="logo-salaojpg.jpg" alt="Logo Roseiane Estúdio" class="logo" />
+        <h1>Seja bem-vinda ao <br> <span>Roseiane Estúdio!</span></h1>
+      </header>
+    </section>
+
+    <section id="sobre">
+      <p>
+        Sou Roseiane, cabeleireira especializada em alisamentos, com mais de 4 anos de experiência dedicada ao cuidado com os cabelos.<br><br>
+        Minha paixão pela beleza e transformação me levou a investir continuamente na minha formação profissional.<br><br>
+        Ao longo da minha jornada, realizei diversos cursos na área de alisamentos, buscando sempre aperfeiçoar minhas técnicas e oferecer um atendimento de excelência.<br><br>
+        Em 2025, concluí mais uma especialização com a renomada professora Glorinha Cabelos, fortalecendo ainda mais meu compromisso com a qualidade.<br><br>
+        Aqui no estúdio, cada cliente é única e meu objetivo é realçar sua beleza com carinho, técnica e respeito à individualidade.
+      </p>
+
+     <!---- <div class="apresentacao-img">
+        <img src="Imagem.jpg" alt="Foto da Roseiane">
+        <p>Essa sou eu, muito prazer!</p>
+      </div>---->
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Roseiane Estúdio.
+  </footer>
+</body>
+</html>

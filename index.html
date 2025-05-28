@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roseiane Estúdio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--Menu de vavegação-->
+  <nav>
+    <div class="nav-container">
+      <div class="logo-text">Roseiane</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre mim.html">Sobre Mim</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu(this)">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="index.html">Início</a>
+      <a href="sobre mim.html">Sobre Mim</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <header>
+        <img src="logo-salaojpg.jpg" alt="Logo Roseiane Estúdio" class="logo" />
+        <h1>Roseiane Estúdio</h1><br>
+         <p>Seja bem-vinda ao Roseiane Estúdio, onde sua beleza é tratada com carinho e profissionalismo!<br>
+            <br>Clique no link abixo para agender o seu horario!</p>
+      </header>
+    
+      <div class="buttons">
+        <a href="https://wa.me/SEUNUMERO" target="_blank">WhatsApp</a>
+        <a href="https://instagram.com/SEUUSUARIO" target="_blank">Instagram</a>
+      </div>
+       
+    </section>
+  
+  </main>
+
+  <footer>
+    © 2025 Roseiane Estúdio.
+  </footer>
+
+  <script>
+    function toggleMenu(x) {
+      x.classList.toggle("nav-open");
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
