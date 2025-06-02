@@ -193,3 +193,18 @@
         max-width: 300px;
       }
     }
+
+nav a,
+nav button,
+nav li {
+    outline: none;
+    -webkit-tap-highlight-color: transparent; /* Remove o flash cinza/azul no Android */
+}
+
+nav a,
+nav button {
+    border: none;           /* remove borda extra, se tiver */
+    box-shadow: none;       /* remove sombra que pode parecer "margem" */
+    outline: none;          /* remove o contorno de foco */
+    -webkit-tap-highlight-color: transparent; /* remove flash azul/cinza em mobile */
+}
