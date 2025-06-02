@@ -11,7 +11,7 @@
     }
 
     nav {
-      background-color: #b19cd9;
+      background-color: #000000;
       color: #fff;
       padding: 1rem 2rem;
       position: sticky;
@@ -26,6 +26,7 @@
     }
 
     .logo-text {
+      color: #000;
       font-family: 'Playfair Display', serif;
       font-size: 1.8rem;
     }
@@ -43,10 +44,12 @@
       transition: color 0.3s;
     }
 
-    .nav-links li a:hover {
-      color: #000000;
+     .nav-links li a:hover {
+      color: #565656;
+      background-color: #ffffff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
     }
-
     .hamburger {
       display: none;
       flex-direction: column;
@@ -64,7 +67,7 @@
     .nav-mobile {
       display: none;
       flex-direction: column;
-      background-color: #b19cd9;
+      background-color: #000000;
       text-align: center;
     }
 
@@ -72,7 +75,11 @@
       color: white;
       padding: 1rem;
       text-decoration: none;
-      border-top: 1px solid #c7b0f2;
+      border-top: 1px solid #000000;
+    }
+    .nav-mobile a:hover {
+      background-color: #565656;
+      color: #ffffff;
     }
 
     .nav-mobile.show {
@@ -85,7 +92,7 @@
     }
 
     header h1 {
-      color: #b19cd9;
+      color: #000000;
       font-family: 'Playfair Display', serif;
       font-size: 2.5rem;
       margin-top: 1rem;
@@ -130,7 +137,7 @@
 
     .buttons a {
       padding: 0.75rem 1.5rem;
-      background-color: #b19cd9;
+      background-color: #000000;
       color: white;
       border-radius: 5px;
       text-decoration: none;
@@ -163,7 +170,7 @@
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #b19cd9;
+      background-color: #000000;
       color: white;
       font-size: 0.9rem;
     }
@@ -186,34 +193,3 @@
         max-width: 300px;
       }
     }
-
-a {
-  color: inherit;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent; /* <<< ESSENCIAL PARA CELULAR */
-}
-
-a:visited {
-  color: inherit;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
-a:focus {
-  outline: 2px dashed #B19CD9;
-  outline-offset: 4px;
-}
-
-.menu-toggle {
-  outline: none;
-  -webkit-tap-highlight-color: transparent; /* Remove destaque no toque */
-  box-shadow: none; /* Remove a borda azul em alguns navegadores */
-}
-.menu-toggle:focus,
-.menu-toggle:active {
-  outline: none;
-  box-shadow: none;
-}
